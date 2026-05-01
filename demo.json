@@ -1,0 +1,25 @@
+{
+    "invoiceNumber": "INV-1001",
+    "date": "2026-05-01",
+    "dueDate": "2026-05-15",
+    "billTo": {
+      "name": "Acme Corp",
+      "address": "123 Business Rd\nCity, State 12345"
+    },
+    "items": [
+      {
+        "description": "Web development",
+        "quantity": 10,
+        "unitPrice": 150,
+        "total": 1500
+      },
+      {
+        "description": "PDF generation tooling",
+        "quantity": 1,
+        "unitPrice": 250,
+        "total": 250
+      }
+    ],
+    "totalAmount": 1750,
+    "notes": "Thank you for your business. Payment is due by the due date above."
+  }

@@ -1,0 +1,9 @@
+---
+description: Code quality and style rules for TypeScript files
+globs: **/*.{ts,tsx}
+---
+
+- Changes must be summarized in CHANGELOG.md under the UNRELEASED section
+- Imports must be ordered alphabetically by the `from` module path, **with two groups**: external packages first (sorted A–Z by `from`), then local/relative imports such as `./` and `../` (sorted A–Z by `from`). Same-module lines stay grouped together (e.g. `import type` then value imports from the same path).
+- Explicit exports using the `export { ... } from "..."` or `export type { ... } from "..."` syntax must be ordered alphabetically by their source module path and placed at the top of the file, immediately below the imports.
+- Types, Interfaces, Functions must have a docstring

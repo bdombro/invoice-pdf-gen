@@ -1,0 +1,16 @@
+{
+  "name": "invoice-pdf-gen",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.2.14"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "^4.5.1",
+    "argsbarg": "^1.2.0",
+    "react": "^19.2.5"
+  }
+}
