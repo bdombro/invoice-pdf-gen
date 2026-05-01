@@ -1,7 +1,7 @@
 ![logo](logo.png)
 <!-- made using https://patorjk.com/software/taag/#p=display&f=Bulbhead&t=invoice-pdf-gen&x=none&v=4&h=4&w=80&we=false -->
 
-A fast, lightweight CLI tool for generating beautiful invoice PDFs from JSON data. Built with [Bun](https://bun.sh) and [@react-pdf/renderer](https://react-pdf.org).
+A fast, lightweight CLI tool for generating beautiful invoice PDFs from JSON data using React+TSX!. Built with [Bun](https://bun.sh) and [@react-pdf/renderer](https://react-pdf.org).
 
 ## Features
 
@@ -10,6 +10,7 @@ A fast, lightweight CLI tool for generating beautiful invoice PDFs from JSON dat
 - **Standalone Binary**: Can be compiled into a single executable for easy distribution.
 - **Clean Design**: Generates professional, well-formatted invoices out of the box.
 
+See [`modern.tsx`](./src/templates/modern.tsx) for the React JSX in action!
 
 ## Usage
 

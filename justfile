@@ -9,15 +9,15 @@ build: build-bin build-bundle
 
 # Produce a standalone binaries under dist/
 build-bin: dependencies
-    # bun build ./src/index.tsx --compile --outfile=dist/invoice-pdf-gen
-    bun build --compile --target=bun-linux-x64 ./src/index.tsx --outfile dist/invoice-pdf-gen-linux
-    bun build --compile --target=bun-darwin-arm64 ./src/index.tsx --outfile dist/invoice-pdf-gen-macos
+    # bun build ./src/index.ts --compile --outfile=dist/invoice-pdf-gen
+    bun build --compile --target=bun-linux-x64 ./src/index.ts --outfile dist/invoice-pdf-gen-linux
+    bun build --compile --target=bun-darwin-arm64 ./src/index.ts --outfile dist/invoice-pdf-gen-macos
     @rm -f .*.bun-build
 
 # Produce a bundled JS file
 build-bundle: dependencies
     mkdir -p dist
-    bun build ./src/index.tsx --target=bun --outfile=dist/invoice-pdf-gen.js
+    bun build ./src/index.ts --target=bun --outfile=dist/invoice-pdf-gen.js
 
 # Install dependencies
 dependencies:
@@ -37,7 +37,7 @@ release bump: build
 
 # Run the unbundled JS file (forward args after `--`, e.g. `just run -- -o invoice.pdf`)
 run *args:
-    bun src/index.tsx {{args}}
+    bun src/index.ts {{args}}
 
 # Run the bundled JS file
 run-bundled *args: build-bundle

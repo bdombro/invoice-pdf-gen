@@ -32,7 +32,7 @@ const root: CliCommand = {
     if (isInteractiveTty) {
       cliErrWithHelp(
         ctx,
-        'stdin must be piped (interactive TTY). Example: bun src/index.tsx --output invoice.pdf < invoice.json',
+        'stdin must be piped (interactive TTY). Example: bun src/index.ts --output invoice.pdf < invoice.json',
       );
     }
 
