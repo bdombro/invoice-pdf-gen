@@ -19,6 +19,10 @@ build-bundle: dependencies
     mkdir -p dist
     bun build ./src/index.ts --target=bun --outfile=dist/invoice-pdf-gen.js
 
+# Run the demo to create demo.pdf from demo.json
+demo:
+    cat demo.json | ./dist/invoice-pdf-gen-macos -o demo.pdf
+
 # Install dependencies
 dependencies:
     bun install
