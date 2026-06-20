@@ -1,12 +1,12 @@
 import { render } from '@react-pdf/renderer';
-import type { CliCommand } from 'argsbarg';
+import type { CliProgram } from 'argsbarg';
 import { CliOptionKind, cliErrWithHelp, cliRun, isInteractiveTty } from 'argsbarg';
 import React from 'react';
 import { parseInvoiceJson } from './parser.ts';
 import * as templates from './templates';
 
 /** Entrypoint for the CLI. */
-const root: CliCommand = {
+const root = {
   key: 'invoice-pdf-gen',
   description: 'Generate an invoice PDF from JSON on stdin',
   options: [
@@ -55,7 +55,7 @@ const root: CliCommand = {
 
     await render(<Template data={invoice} />, outputPath);
   },
-};
+} satisfies CliProgram;
 
 /**
  * Parses argv and runs the invoice PDF CLI (does not return on success).

@@ -6,7 +6,7 @@
       "name": "invoice-pdf-gen",
       "dependencies": {
         "@react-pdf/renderer": "^4.5.1",
-        "argsbarg": "^1.2.0",
+        "argsbarg": "^2.1.0",
         "react": "^19.2.5",
       },
       "devDependencies": {
@@ -61,7 +61,7 @@
 
     "abs-svg-path": ["abs-svg-path@0.1.1", "", {}, "sha512-d8XPSGjfyzlXC3Xx891DJRyZfqk5JU0BJrDQcsWomFIV1/BIzPW5HDH5iDdWpqWaav0YVIEzT1RHTwWr0FFshA=="],
 
-    "argsbarg": ["argsbarg@1.2.0", "", { "bin": { "argsbarg": "src/index.ts" } }, "sha512-qwzTd2jx7aWq0wvvPFAlNyCeNWAyPvimVcym6oixWSP0uZsFh5Ph31ptwoPRGT0WM6lKSWg81t8uyVhtAwPm2A=="],
+    "argsbarg": ["argsbarg@2.1.0", "", { "bin": { "argsbarg": "src/index.ts" } }, "sha512-HWOp700SPs/DkhJg9ImemVZ1mKeRnWr6Vbhedi303u0iVOtYmEBv7+AHUFaYS7IvEXsWRWnssBHrNNAtg04a6w=="],
 
     "base64-js": ["base64-js@0.0.8", "", {}, "sha512-3XSA2cR/h/73EzlXXdU6YNycmYI7+kicTxks4eJg2g39biHR84slg2+des+p7iHYhbRg/udIS4TD53WabcOUkw=="],
 

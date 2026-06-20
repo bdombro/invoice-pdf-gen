@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.5.1",
-    "argsbarg": "^1.2.0",
+    "argsbarg": "^2.1.0",
     "react": "^19.2.5"
   }
 }
